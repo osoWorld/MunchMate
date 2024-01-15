@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="g_gray700">#666666</color>
+    <color name="textColor">#E14949</color>
+    <color name="iconColor">#FF000000</color>
+    <color name="Text_Default_Color">#808080</color>
+    <color name="hintColor">#C4C4C4</color>
+    <color name="startColor">#E85353</color>
+    <color name="endColor">#BE1515</color>
+    <color name="startColorGreen">#4BFF5D</color>
+</resources>

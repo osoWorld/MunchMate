@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "787965333620",
+    "project_id": "food-ordering-4e47a",
+    "storage_bucket": "food-ordering-4e47a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787965333620:android:abcdbbdeaf82ffc4f10121",
+        "android_client_info": {
+          "package_name": "com.example.munchmate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6_g1ZLwQ8gJi6XSIcbWNMAzPQ57bGvl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
