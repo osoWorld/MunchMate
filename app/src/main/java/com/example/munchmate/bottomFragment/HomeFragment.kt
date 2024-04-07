@@ -14,6 +14,7 @@ import com.example.munchmate.R
 import com.example.munchmate.adapters.PopularAdapter
 import com.example.munchmate.databinding.FragmentHomeBinding
 
+
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
 
@@ -27,7 +28,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentHomeBinding.inflate(layoutInflater,container,false)
+        binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 
@@ -42,16 +43,22 @@ class HomeFragment : Fragment() {
         binding.imageSlider.setImageList(imageList, scaleType = ScaleTypes.FIT)
 
         val foodName = listOf("Burger", "Sandwich", "Momo", "List", "Items")
-        val price = listOf("350","170","150","5","15")
-        val popularFoodImage = listOf(R.drawable.menu1,R.drawable.menu2,R.drawable.menu3,R.drawable.menu4,R.drawable.menu5)
+        val price = listOf("350", "170", "150", "5", "15")
+        val popularFoodImage = listOf(
+            R.drawable.menu1,
+            R.drawable.menu2,
+            R.drawable.menu3,
+            R.drawable.menu4,
+            R.drawable.menu5
+        )
 
-        val adapter = PopularAdapter(foodName,popularFoodImage,price,requireContext())
+        val adapter = PopularAdapter(foodName, popularFoodImage, price, requireContext())
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerView.adapter = adapter
 
         binding.viewALLTV.setOnClickListener {
             val bottomSheet = MenuBottomSheetFragment()
-            bottomSheet.show(parentFragmentManager,"bottomDialogueFragment")
+            bottomSheet.show(parentFragmentManager, "bottomDialogueFragment")
         }
     }
 }
